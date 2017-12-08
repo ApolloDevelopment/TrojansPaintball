@@ -12,13 +12,12 @@ body {
 
 img.bgimage {
   size: cover;
-  repeat: no-repeat;
   position: fixed;
   width: 100%;
   opacity: 1;
   z-index: 0;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  /*-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  /*filter: grayscale(100%);*/
 }
 
 a {
@@ -34,9 +33,9 @@ a {
 
 #header1 {
   padding-bottom: 0px;
-  height: 120px;
+  height: 30%;
   width: 100%;
-  border-bottom: 4px #333 solid;
+  /*border-bottom: 4px #333 solid;*/
   background-color: #000000b5;
   margin-bottom: 30px;
   position: relative;
@@ -50,28 +49,33 @@ a {
   color: #be2ffc;
   align: center;
   padding: 0px;
+  text-shadow: 4px 0px 4px #000000;
 }
 
 ul.tabs {
   width: auto;
-  position: absolute;
-  left: 35%;
+  position: relative;
+  /*left: 35%;*/
   list-style-type: none;
-  line-height: 50px;
-  bottom: 72%;
+  line-height: 1px;
+  /*bottom: 72%;*/
   z-index: 2;
+  margin-bottom: 25px;
 }
 
 ul.tabs li {
   display: inline;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
   color: lightgray;
   font-size: 20px;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 ul.tabs li a {
   color: lightgray;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 ul.tabs li a:hover {
@@ -82,7 +86,7 @@ ul.tabs li a:hover {
 
 ul.tabs li.selected {
   color: #be2ffc;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 li.selected:hover {
@@ -91,7 +95,7 @@ li.selected:hover {
 
 .page-content {
   background-color: #000000b5;
-  width: 1100px;
+  width: 85%;
   height: 600px;
   opacity: 60%;
   padding-bottom: 0px;
@@ -102,16 +106,38 @@ li.selected:hover {
   z-index: 3;
 }
 
-.page-content p {
+.page-content h2 {
   opacity: 1.0;
-  font-family: "Calibri";
-  padding-left: 15px;
+  font-family: "Verdana";
+  margin-top: 40px;
+  padding-bottom: 15px;
   color: #be2ffc;
-  font-size: 20px;
+  font-size: 30px;
+  spacing: 5px;
+  font-weight: lighter;
+  border-bottom: 3px #be2ffc solid;
+  width: 40%;
+  text-shadow: 4px 0px 4px #000000;
+}
+
+h2.captains-head {
+  width: 24%;
+}
+
+h2.SocialMedia-head {
+  width: 30%;
+}
+
+.page-content p {
+  color: #B3B3B3;
+  font-size: 23px;
+  /*font-style: italic;*/
+  text-shadow: 4px 0px 4px #000;
+  width: 80%;
 }
 
 .Copyright {
-  flex: 1;
+  flex: 2;
   order: 2;
   /*border: 1px #FFF solid;*/
   float: right;
@@ -132,6 +158,7 @@ li.selected:hover {
   align-items: stretch;
   position: relative;
   z-index: 1;
+  margin-bottom: 5px;
 }
 
 .DevelopedBy {
@@ -152,4 +179,8 @@ li.selected:hover {
 
 .footerLink {
   color: MediumBlue;
+}
+
+.sad-face {
+  margin-top: 30px;
 }
